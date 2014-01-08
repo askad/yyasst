@@ -13,11 +13,18 @@
     <servlet-name>hello</servlet-name>
     <servlet-class>com.example.HelloServlet</servlet-class>
   </servlet>
-
+  <servlet>
+    <servlet-name>validWX</servlet-name>
+    <servlet-class>com.yy.init.ValidateWX</servlet-class>
+  </servlet>
   <servlet-mapping>
     <servlet-name>hello</servlet-name>
     <url-pattern>/hello</url-pattern>
   </servlet-mapping>
 
+  <servlet-mapping>
+    <servlet-name>validWX</servlet-name>
+    <url-pattern>/validWX</url-pattern>
+  </servlet-mapping>
 
 </web-app>
