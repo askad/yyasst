@@ -6,25 +6,17 @@
     version="2.5">
 
     <welcome-file-list>
-        <welcome-file>index.jsp</welcome-file>
+        <welcome-file>index.html</welcome-file>
     </welcome-file-list>
     
   <servlet>
-    <servlet-name>hello</servlet-name>
-    <servlet-class>com.example.HelloServlet</servlet-class>
-  </servlet>
-  <servlet>
-    <servlet-name>validWX</servlet-name>
-    <servlet-class>com.yy.init.ValidateWX</servlet-class>
-  </servlet>
-  <servlet-mapping>
-    <servlet-name>hello</servlet-name>
-    <url-pattern>/hello</url-pattern>
-  </servlet-mapping>
+    <servlet-name>wxMsgCenter</servlet-name>
+    <servlet-class>com.yy.controller.ServiceController</servlet-class>
+  </servlet>.
 
   <servlet-mapping>
-    <servlet-name>validWX</servlet-name>
-    <url-pattern>/validWX</url-pattern>
+    <servlet-name>wxMsgCenter</servlet-name>
+    <url-pattern>/wxsc</url-pattern>
   </servlet-mapping>
 
 </web-app>
