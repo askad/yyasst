@@ -5,6 +5,7 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 
+import javax.xml.transform.OutputKeys;
 import javax.xml.transform.Transformer;
 import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
@@ -45,6 +46,7 @@ public class MsgHub {
     private void responseResult(Document document, OutputStream os) {
         try {
             Transformer transformer = CommonTools.getTransformerFactory().newTransformer();
+            transformer.setOutputProperty(OutputKeys.OMIT_XML_DECLARATION, "yes");
             transformer.transform(new DOMSource(document), new StreamResult(new OutputStreamWriter(os, "utf-8")));
         } catch (Exception e) {
             e.printStackTrace();// 保存dom至目输出流
