@@ -1,6 +1,6 @@
 package com.yy.msg.normal;
 
-public class MsgConstant {
+public class MsgContentConstant {
     /** 关注事件|扫描带参数二维码事件(未关注) */
     public final static String EVENT_SUBSCRIBE="subscribe";
     /** 取消关注事件 */
@@ -26,5 +26,7 @@ public class MsgConstant {
     public final static String MSGTYPE_LOCATION="location";
     /** 链接消息 */
     public final static String MSGTYPE_LINK="link";
+    /** 图文消息 */
+    public final static String MSGTYPE_NEWS="news";
 }
 

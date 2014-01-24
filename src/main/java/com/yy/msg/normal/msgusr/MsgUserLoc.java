@@ -1,4 +1,7 @@
-package com.yy.msg.normal;
+package com.yy.msg.normal.msgusr;
+
+import com.yy.msg.normal.BaseMsgEntity;
+import com.yy.msg.normal.MsgContentConstant;
 
 
 /**
@@ -13,7 +16,7 @@ public class MsgUserLoc extends BaseMsgEntity{
     private String label ;// 地理位置信息
     private String msgId;// 消息id，64位整型 
     public MsgUserLoc() {
-        setMsgType(MsgConstant.MSGTYPE_LOCATION);//消息类型，event
+        setMsgType(MsgContentConstant.MSGTYPE_LOCATION);//消息类型，event
     }
     public String getLocation_X() {
         return location_X;

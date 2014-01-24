@@ -1,7 +1,7 @@
 package com.yy.msg.normal.event;
 
 import com.yy.msg.normal.BaseMsgEvent;
-import com.yy.msg.normal.MsgConstant;
+import com.yy.msg.normal.MsgContentConstant;
 
 /**
  *   上报地理位置事件
@@ -9,7 +9,7 @@ import com.yy.msg.normal.MsgConstant;
  *
  */
 public class MsgLocation extends BaseMsgEvent {
-    private final static String event=MsgConstant.EVENT_LOCATION;//事件类型，CLICK
+    private final static String event=MsgContentConstant.EVENT_LOCATION;//事件类型，CLICK
     private String latitude;//地理位置纬度
     private String longitude;// 地理位置经度 
     private String precision;// 地理位置精度

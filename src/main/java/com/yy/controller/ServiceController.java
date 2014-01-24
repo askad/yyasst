@@ -16,7 +16,6 @@ import javax.servlet.http.HttpServletResponse;
 import org.xml.sax.SAXException;
 
 import com.yy.common.SecurityCode;
-import com.yy.handler.MsgHub;
 
 public class ServiceController extends HttpServlet {
 

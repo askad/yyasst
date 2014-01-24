@@ -1,4 +1,7 @@
-package com.yy.msg.normal;
+package com.yy.msg.normal.msgusr;
+
+import com.yy.msg.normal.BaseMsgEntity;
+import com.yy.msg.normal.MsgContentConstant;
 
 
 /**
@@ -10,7 +13,7 @@ public class MsgUserText extends BaseMsgEntity{
     private String content ;// 文本消息内容
     private String msgId;//   消息id，64位整型 
     public MsgUserText() {
-        setMsgType(MsgConstant.MSGTYPE_TEXT);//消息类型，event
+        setMsgType(MsgContentConstant.MSGTYPE_TEXT);//消息类型，event
     }
     public String getContent() {
         return content;

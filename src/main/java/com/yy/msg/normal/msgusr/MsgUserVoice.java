@@ -1,4 +1,7 @@
-package com.yy.msg.normal;
+package com.yy.msg.normal.msgusr;
+
+import com.yy.msg.normal.BaseMsgEntity;
+import com.yy.msg.normal.MsgContentConstant;
 
 
 /**
@@ -11,7 +14,7 @@ public class MsgUserVoice extends BaseMsgEntity{
     private String mediaId ;// 语音消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String msgId;//   消息id，64位整型 
     public MsgUserVoice() {
-        setMsgType(MsgConstant.MSGTYPE_VOICE);//消息类型，event
+        setMsgType(MsgContentConstant.MSGTYPE_VOICE);//消息类型，event
     }
     public String getFormat() {
         return format;

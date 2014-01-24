@@ -8,6 +8,6 @@ package com.yy.msg.normal;
  */
 public class BaseMsgEvent extends BaseMsgEntity {
     public BaseMsgEvent() {
-        setMsgType(MsgConstant.MSGTYPE_EVENT);// 消息类型，event
+        setMsgType(MsgContentConstant.MSGTYPE_EVENT);// 消息类型，event
     }
 }

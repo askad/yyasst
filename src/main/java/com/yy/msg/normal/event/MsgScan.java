@@ -1,7 +1,7 @@
 package com.yy.msg.normal.event;
 
 import com.yy.msg.normal.BaseMsgEvent;
-import com.yy.msg.normal.MsgConstant;
+import com.yy.msg.normal.MsgContentConstant;
 
 /**
  *   扫描带参数二维码事件(已关注) 
@@ -9,7 +9,7 @@ import com.yy.msg.normal.MsgConstant;
  *
  */
 public class MsgScan extends BaseMsgEvent {
-    private final static String event=MsgConstant.EVENT_SCAN;//事件类型，scan
+    private final static String event=MsgContentConstant.EVENT_SCAN;//事件类型，scan
     private String eventKey;//事件KEY值，qrscene_为前缀，后面为二维码的参数值
     private String ticket;// 二维码的ticket，可用来换取二维码图片 
     

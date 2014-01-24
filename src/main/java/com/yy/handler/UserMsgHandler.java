@@ -1,4 +1,4 @@
-package com.yy.handler.event;
+package com.yy.handler;
 
 public class UserMsgHandler {
 

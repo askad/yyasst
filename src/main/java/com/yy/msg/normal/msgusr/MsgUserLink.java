@@ -1,4 +1,7 @@
-package com.yy.msg.normal;
+package com.yy.msg.normal.msgusr;
+
+import com.yy.msg.normal.BaseMsgEntity;
+import com.yy.msg.normal.MsgContentConstant;
 
 
 /**
@@ -12,7 +15,7 @@ public class MsgUserLink extends BaseMsgEntity{
     private String url ;// 消息链接
     private String msgId;// 消息id，64位整型 
     public MsgUserLink() {
-        setMsgType(MsgConstant.MSGTYPE_LINK);//消息类型，event
+        setMsgType(MsgContentConstant.MSGTYPE_LINK);//消息类型，event
     }
     public String getTitle() {
         return title;

@@ -1,4 +1,7 @@
-package com.yy.msg.normal;
+package com.yy.msg.normal.msgusr;
+
+import com.yy.msg.normal.BaseMsgEntity;
+import com.yy.msg.normal.MsgContentConstant;
 
 
 /**
@@ -11,7 +14,7 @@ public class MsgUserImage extends BaseMsgEntity{
     private String mediaId ;// 图片消息媒体id，可以调用多媒体文件下载接口拉取数据。
     private String msgId;//   消息id，64位整型 
     public MsgUserImage() {
-        setMsgType(MsgConstant.MSGTYPE_IMAGE);//消息类型，event
+        setMsgType(MsgContentConstant.MSGTYPE_IMAGE);//消息类型，event
     }
     public String getPicUrl() {
         return picUrl;

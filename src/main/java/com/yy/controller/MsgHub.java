@@ -1,4 +1,4 @@
-package com.yy.handler;
+package com.yy.controller;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -13,9 +13,9 @@ import org.w3c.dom.Document;
 import org.xml.sax.SAXException;
 
 import com.yy.common.CommonTools;
-import com.yy.handler.event.EventHandler;
+import com.yy.handler.EventHandler;
 import com.yy.msg.normal.FieldConstant;
-import com.yy.msg.normal.MsgConstant;
+import com.yy.msg.normal.MsgContentConstant;
 
 public class MsgHub {
 
@@ -25,7 +25,7 @@ public class MsgHub {
         Document documentOut = null;
         String msgType = getMsgType(documentIn);
         // 根据MsgType执行不同的handler
-        if (MsgConstant.MSGTYPE_EVENT.equals(msgType)) {
+        if (MsgContentConstant.MSGTYPE_EVENT.equals(msgType)) {
             EventHandler eventHandler = new EventHandler(CommonTools.getContentFromDocument(documentIn,
                     FieldConstant.EVENT_EVENT));
             eventHandler.setRequest(documentIn);
