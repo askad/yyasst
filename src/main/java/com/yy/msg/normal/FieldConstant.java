@@ -13,6 +13,9 @@ public class FieldConstant {
     public static final String EVENT_LATITUDE = "Latitude";// 地理位置纬度
     public static final String EVENT_LONGITUDE = "Longitude";// 地理位置经度
     public static final String EVENT_PRECISION = "Precision";// 地理位置精度
+    
+    public static final String USR_MSG_CONTENT = "Content";// 文本消息内容
+    public static final String USR_MSG_MSGID = "MsgId";// 文本消息内容 
 
     public static final String RES_TEXT_CONTENT = "Content";// 回复的消息内容（换行：在content中能够换行，微信客户端就支持换行显示）
     public static final String RES_TEXT_ArticleCount = "ArticleCount";// 图文消息个数，限制为10条以内

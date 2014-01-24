@@ -14,6 +14,7 @@ import org.xml.sax.SAXException;
 
 import com.yy.common.CommonTools;
 import com.yy.handler.EventHandler;
+import com.yy.handler.UserMsgHandler;
 import com.yy.msg.normal.FieldConstant;
 import com.yy.msg.normal.MsgContentConstant;
 
@@ -26,10 +27,17 @@ public class MsgHub {
         String msgType = getMsgType(documentIn);
         // 根据MsgType执行不同的handler
         if (MsgContentConstant.MSGTYPE_EVENT.equals(msgType)) {
+            // 事件消息
             EventHandler eventHandler = new EventHandler(CommonTools.getContentFromDocument(documentIn,
                     FieldConstant.EVENT_EVENT));
             eventHandler.setRequest(documentIn);
             documentOut = eventHandler.onProcess();
+        } else {
+            // 文本消息
+            UserMsgHandler userMsgHandler = new UserMsgHandler(msgType);
+            userMsgHandler.setRequest(documentIn);
+            documentOut = userMsgHandler.onProcess();
+            // TODO THROW ERROR
         }
         responseResult(documentOut, os);
     }

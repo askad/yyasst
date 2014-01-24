@@ -13,7 +13,7 @@ import com.yy.msg.normal.msgusr.PoJoArticle;
 
 public class EventHandler extends BaseHandler {
     private String eventName;
-    private BaseMsgEvent msgIn;
+
 
     public EventHandler(String eventName) {
         this.eventName = eventName;
@@ -57,6 +57,7 @@ public class EventHandler extends BaseHandler {
      * 
      * @param document
      */
+    @Override
     public void setRequest(Document document) {
         if (MsgContentConstant.EVENT_SCAN.equals(eventName)) {
             MsgScan msgScan = new MsgScan();
@@ -72,18 +73,5 @@ public class EventHandler extends BaseHandler {
             // TODO
         }
         initMsgHead(document);
-    }
-
-    /**
-     * common user info
-     * 
-     * @param document
-     * @return
-     */
-    protected void initMsgHead(Document document) {
-        msgIn.setToUserName(CommonTools.getContentFromDocument(document, FieldConstant.HEAD_TO_USER_NAME));
-        msgIn.setFromUserName(CommonTools.getContentFromDocument(document, FieldConstant.HEAD_FROM_USER_NAME));
-        msgIn.setCreateTime(CommonTools.getContentFromDocument(document, FieldConstant.HEAD_CREATE_TIME));
-        msgIn.setMsgType(CommonTools.getContentFromDocument(document, FieldConstant.HEAD_MSG_TYPE));
     }
 }
