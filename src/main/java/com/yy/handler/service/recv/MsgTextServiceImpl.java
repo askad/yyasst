@@ -1,5 +1,7 @@
 package com.yy.handler.service.recv;
 
+import java.util.Random;
+
 import org.w3c.dom.Document;
 
 import yy.weibo.service.WeiboTrafficService;
@@ -35,6 +37,11 @@ public class MsgTextServiceImpl implements MsgRecvService {
         if (ControlConstant.TRAFFIC_1.equals(text)) {
             WeiboTrafficService wts = new WeiboTrafficService();
             return wts.getTextFromSc();
+        }
+        if (ControlConstant.EGGS_2.equals(text)) {
+            Random random = new Random();
+            int i = Math.abs(random.nextInt()) % TipConstant.TIP_MAGIC_EGGS.length;
+            return TipConstant.TIP_MAGIC_EGGS[i];
         }
         // TODO
         return null;

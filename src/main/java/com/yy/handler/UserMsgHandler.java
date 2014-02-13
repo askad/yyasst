@@ -26,7 +26,7 @@ public class UserMsgHandler extends BaseHandler {
         if (MsgContentConstant.MSGTYPE_TEXT.equals(msgType)) {
             
             MsgRecvService msgRecvService = new MsgTextServiceImpl();
-            msgRecvService.onService(msgIn);
+            return msgRecvService.onService(msgIn);
             // return null
         } else if (MsgContentConstant.MSGTYPE_IMAGE.equals(msgType)) {
 
