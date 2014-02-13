@@ -26,7 +26,7 @@ public class BackDoorController extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        WeiboTrafficService wts = new WeiboTrafficService();
+        WeiboTrafficService wts = new WeiboTrafficService(true);
         response.setCharacterEncoding("utf-8");
         response.setContentType("text/html;charSet=UtF-8");
         Writer out = response.getWriter();
