@@ -41,6 +41,8 @@
     		<groupId>yy.weibo</groupId>
     		<artifactId>weiboyy</artifactId>
     		<version>1.0</version>
+    		 <systemPath>${basedir}/lib/weiboyy.jar</systemPath>
+    		 <scope>system</scope>
 		</dependency>
     </dependencies>
 
