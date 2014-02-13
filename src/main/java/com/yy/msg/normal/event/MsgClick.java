@@ -1,7 +1,7 @@
 package com.yy.msg.normal.event;
 
+import com.yy.common.MsgContentConstant;
 import com.yy.msg.normal.BaseMsgEntity;
-import com.yy.msg.normal.MsgContentConstant;
 
 /**
  *  自定义菜单事件

@@ -19,6 +19,10 @@ import com.yy.common.SecurityCode;
 
 public class ServiceController extends HttpServlet {
 
+    /**
+     * 
+     */
+    private static final long serialVersionUID = 1L;
     public static final String TOKEN = "askadyy";
 
     @Override

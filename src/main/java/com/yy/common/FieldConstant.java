@@ -1,4 +1,4 @@
-package com.yy.msg.normal;
+package com.yy.common;
 
 public class FieldConstant {
     public static final String HEAD_ROOT = "xml";

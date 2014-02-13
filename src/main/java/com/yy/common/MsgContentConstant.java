@@ -1,4 +1,4 @@
-package com.yy.msg.normal;
+package com.yy.common;
 
 public class MsgContentConstant {
     /** 关注事件|扫描带参数二维码事件(未关注) */

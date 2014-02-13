@@ -1,7 +1,7 @@
 package com.yy.msg.normal.msgusr;
 
+import com.yy.common.MsgContentConstant;
 import com.yy.msg.normal.BaseMsgEntity;
-import com.yy.msg.normal.MsgContentConstant;
 
 
 /**

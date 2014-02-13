@@ -1,7 +1,7 @@
 package com.yy.msg.normal.event;
 
+import com.yy.common.MsgContentConstant;
 import com.yy.msg.normal.BaseMsgEvent;
-import com.yy.msg.normal.MsgContentConstant;
 
 /**
  * 扫描带参数二维码关注事件

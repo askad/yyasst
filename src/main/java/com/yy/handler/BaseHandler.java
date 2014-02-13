@@ -3,8 +3,8 @@ package com.yy.handler;
 import org.w3c.dom.Document;
 
 import com.yy.common.CommonTools;
+import com.yy.common.FieldConstant;
 import com.yy.msg.normal.BaseMsgEntity;
-import com.yy.msg.normal.FieldConstant;
 
 public abstract class BaseHandler {
     protected BaseMsgEntity msgIn;

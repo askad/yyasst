@@ -1,7 +1,7 @@
 package com.yy.msg.normal.event;
 
+import com.yy.common.MsgContentConstant;
 import com.yy.msg.normal.BaseMsgEvent;
-import com.yy.msg.normal.MsgContentConstant;
 
 /**
  *   取消关注事件

@@ -4,9 +4,9 @@ import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 
 import com.yy.common.CommonTools;
+import com.yy.common.FieldConstant;
+import com.yy.common.MsgContentConstant;
 import com.yy.msg.normal.BaseMsgEvent;
-import com.yy.msg.normal.FieldConstant;
-import com.yy.msg.normal.MsgContentConstant;
 import com.yy.msg.normal.msgusr.PoJoArticle;
 
 public class MsgResponser {
@@ -61,7 +61,32 @@ public class MsgResponser {
         document.appendChild(root);
         return this.document;
     }
+    /**
+     *            BaseMsgEvent baseMsgEvent = new BaseMsgEvent();
+            baseMsgEvent.setFromUserName(msgIn.getToUserName());
+            baseMsgEvent.setToUserName(msgIn.getFromUserName());
+            MsgResponser baseResponser = new MsgResponser(baseMsgEvent);
+            PoJoArticle[] articles = new PoJoArticle[2];
+            PoJoArticle article1 = new PoJoArticle();
+            article1.setDescription("desc1");
+            article1.setDescription("description1");
+            article1.setPicUrl("picUrl1");
+            article1.setTitle("title1");
+            article1.setUrl("url1");
+            PoJoArticle article2 = new PoJoArticle();
+            article2.setDescription("desc2");
+            article2.setDescription("description2");
+            article2.setPicUrl("picUrl2");
+            article2.setTitle("title2");
+            article2.setUrl("url2");
+            articles[0] = article1;
+            articles[1] = article2;
+     */
 
+    /**
+     * 
+     * @return
+     */
     private Element initHead() {
 
         msg.setCreateTime(CommonTools.getCurrentTime());
