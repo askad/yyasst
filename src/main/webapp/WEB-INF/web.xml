@@ -12,11 +12,20 @@
   <servlet>
     <servlet-name>wxMsgCenter</servlet-name>
     <servlet-class>com.yy.controller.ServiceController</servlet-class>
-  </servlet>.
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>wxMsgCenter</servlet-name>
     <url-pattern>/wxsc</url-pattern>
+  </servlet-mapping>
+  
+    <servlet>
+    <servlet-name>backdoor</servlet-name>
+    <servlet-class>com.yy.controller.BackDoorController</servlet-class>
+  </servlet>.
+    <servlet-mapping>
+    <servlet-name>backdoor</servlet-name>
+    <url-pattern>/bd</url-pattern>
   </servlet-mapping>
 
 </web-app>
