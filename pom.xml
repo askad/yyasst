@@ -36,6 +36,12 @@
             <artifactId>jsp-2.1-glassfish</artifactId>
             <version>2.1.v20100127</version>
         </dependency>	
+        
+        <dependency>
+    		<groupId>yy.weibo</groupId>
+    		<artifactId>weiboyy</artifactId>
+    		<version>1.0</version>
+		</dependency>
     </dependencies>
 
     <build>
